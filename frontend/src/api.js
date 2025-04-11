@@ -3,7 +3,8 @@ import axios from "axios";
 // Optional: Log to verify axios is correctly imported.
 console.log("axios =>", axios);
 
-const API_BASE_URL = "http://127.0.0.1:5000/api";
+// 🔁 Updated to use your Render backend
+const API_BASE_URL = "https://ai-finance-backend-ma8u.onrender.com/api";
 
 export const getExpenses = async () => {
   try {

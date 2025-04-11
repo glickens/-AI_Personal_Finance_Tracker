@@ -1,25 +1,43 @@
 # AI Personal Finance Tracker
 
-## Overview
-The AI Personal Finance Tracker is a smart, AI-powered financial management application that helps users track expenses, analyze spending habits, and set financial goals. Built using Python, Flask/Django, and integrates with AI models to provide insights and recommendations.
+A full-stack financial management application that tracks expenses, analyzes spending habits, and uses AI to generate predictions and insights.
+
+Live Site: https://cheery-narwhal-d4cf08.netlify.app  
+Backend API: https://ai-finance-backend-ma8u.onrender.com
+
+## Technologies
+- Backend: Python, Flask, SQLAlchemy
+- Frontend: React, Material-UI
+- AI/ML: Scikit-learn, OpenAI API
+- Database: PostgreSQL (Render), SQLite (local)
 
 ## Features
-- Expense Tracking: Log daily expenses and categorize transactions.
-- Financial Insights: AI-powered analytics to identify spending patterns.
-- Budget Planning: Set monthly or yearly budgets and track progress.
-- Alerts & Notifications: Get real-time alerts for unusual spending.
-- Data Visualization: Graphs and charts to monitor financial health.
+- Add, view, and delete expenses
+- AI-powered predictions and budget summaries
+- Data visualizations with charts and graphs
+- Responsive design with Material-UI
 
-## Technologies Used
-- Backend: Python, Flask/Django, SQLAlchemy
-- Frontend: React.js / Material-UI
-- AI/ML: OpenAI API / Scikit-learn for predictive analysis
-- Database: PostgreSQL / SQLite
+## API Endpoints
+- GET /api/expenses
+- POST /api/expenses
+- DELETE /api/expenses/<id>
+- GET /api/predict
 
-## Installation
-To run the project locally, follow these steps:
+## Setup
+Clone the repo:
+git clone https://github.com/glickens/-AI_Personal_Finance_Tracker.git
 
-1. Clone the Repository
-   ```bash
-   git clone https://github.com/glickens/-AI_Personal_Finance_Tracker.git
-   cd AI_Personal_Finance_Tracker
+Backend:
+cd backend  
+python -m venv venv  
+source venv/bin/activate (or venv\Scripts\activate on Windows)  
+pip install -r requirements.txt  
+python app.py
+
+Frontend:
+cd ../frontend  
+npm install  
+npm start
+
+## Author
+Terry Lynn - https://github.com/glickens
